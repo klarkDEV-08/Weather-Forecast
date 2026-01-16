@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+  <title>Weather Forecast</title>
+</head>
+
+<body>
+  <div id="container">
+    <form id="search">
+      <i class="fa-solid fa-location-dot"></i>
+      <input
+        type="search"
+        id="city_name"
+        placeholder="Buscar cidade"
+      />
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <div id="weather">
+      <h1 id="title"></h1>
+
+      <div id="infos">
+        <div>
+          <img id="temp_img" />
+          <div>
+            <p id="temp_value"></p>
+            <p id="temp_description"></p>
+          </div>
+        </div>
+
+        <div id="other_infos">
+          <div class="info">
+            <i class="fa-solid fa-temperature-empty"></i>
+            <div>
+              <h2>Temp. máx</h2>
+              <p id="temp_max"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-temperature-empty"></i>
+            <div>
+              <h2>Temp. mín</h2>
+              <p id="temp_min"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-droplet"></i>
+            <div>
+              <h2>Humidade</h2>
+              <p id="humidity"></p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <h2>Vento</h2>
+              <p id="wind"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="alert"></div>
+  </div>
+
+  <script src="src/javascript/script.js"></script>
+</body>
+</html>
